@@ -1,0 +1,32 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  --font-family: "Nunito", sans-serif;
+  --second-family: "OpenSans", sans-serif;
+  --third-family: "Montserrat", sans-serif;
+  --content-width: 1420px;
+  --container-offset: 10px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --primary-color: #415167;
+  --accent-color: #C7A17A;
+  --accent-color2: #F9F5E8;
+  --dark-gray: #151D28;
+  --light-gray: #EDF0F5;
+
+  //font sizes
+  --fz-default: 16px;
+  --fz-tiny: 14px;
+  --fz-small: 20px;
+  --fz-medium: 24px;
+  --fz-big: 30px;
+  --fz-great: 54px;
+
+  // font weight
+  --fw-300: 300;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-900: 900;
+}
