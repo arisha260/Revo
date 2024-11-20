@@ -1,6 +1,7 @@
 <script setup>
   import Burger from "@/components/Burger/Burger.vue";
   import Nav from "@/components/Nav.vue";
+  import Video from "@/components/Video/Video.vue";
   import {ref} from "vue";
 
   const activeBurger = ref(false);
@@ -11,6 +12,11 @@
     activeBurger.value = !activeBurger.value;
     activeNav.value = !activeNav.value;
     activeLogo.value = !activeLogo.value;
+    if (activeBurger.value) {
+      document.body.classList.add("active");
+    } else{
+      document.body.classList.remove("active");
+    }
   }
 </script>
 
@@ -33,7 +39,9 @@
           <span class="title header__title-item animated">COFFEE</span>
         </h1>
       </div>
-      <div class="header__row header__row--center"></div>
+      <div class="header__row header__row--center">
+        <Video />
+      </div>
       <div class="header__row header__row--right">
         <Nav :class="{ 'active-nav': activeNav }"/>
       </div>
@@ -43,6 +51,9 @@
 
 <style scoped lang="scss">
   .header{
+    &__container>:not(:last-child){
+      margin-bottom: 5rem;
+    }
     &__header__row--left{
       display: flex;
       justify-content: space-between;
