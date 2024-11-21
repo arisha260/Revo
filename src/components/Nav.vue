@@ -32,9 +32,9 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 40px;
-    padding: 80px 0 0 40px;
+    padding: 7.5rem 0 0 2.5rem;
     transform: translateX(calc(-100% - 5vw));
-    transition: 1s cubic-bezier(.66,.44,.27,1);
+    transition: 1s cubic-bezier(.19,0,0,1.01);
     will-change: transform;
     &__button{
       color: var(--light-color);

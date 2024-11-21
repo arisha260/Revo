@@ -1,0 +1,80 @@
+<script setup>
+  import Content from "@/components/SectionChoose/ChooseContent.vue";
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+  defineProps({
+    src: String,
+    src2: String,
+    cost: String,
+    cost2: String,
+    title: String,
+    title2: String,
+    text: String,
+    text2: String,
+  })
+</script>
+
+<template>
+  <article class="swiper__item choose-card">
+    <div class="choose-card__img-box">
+      <img :src="src" alt>
+    </div>
+    <div class="choose-card__content">
+      <span class="cost choose-card__cost">{{ cost }}</span>
+      <p class="title-4 choose-card__title">{{ title }}</p>
+      <p class="description choose-card__text">{{ text }}</p>
+      <div class="choose-card__btns">
+        <a href="#" class="button">MUA NGAY</a>
+        <a href="#" class="button-2">CHI TIẾT</a>
+      </div>
+    </div>
+  </article>
+  <article class="swiper__item choose-card">
+    <div class="choose-card__img-box">
+      <img :src="src2" alt>
+    </div>
+    <div class="choose-card__content">
+      <span class="cost choose-card__cost">{{ cost2 }}</span>
+      <p class="title-4 choose-card__title">{{ title2 }}</p>
+      <p class="description choose-card__text">{{ text2 }}</p>
+      <div class="choose-card__btns">
+        <a href="#" class="button">MUA NGAY</a>
+        <a href="#" class="button-2">CHI TIẾT</a>
+      </div>
+    </div>
+  </article>
+</template>
+
+<style scoped lang="scss">
+  .choose-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--light-color);
+    box-shadow: 0px 4px 6px -4px rgba(34, 60, 80, 0.2);
+    &__img-box{
+      background-color: var(--light-gray);
+      display: grid;
+      place-items: center;
+      width: 100%;
+      user-select: none;
+    }
+    &__content{
+      padding: 2.625rem;
+      text-align: center;
+    }
+    &__cost{
+      margin-bottom: 0.5rem;
+    }
+    &__title{
+      margin-bottom: 1.5rem;
+    }
+    &__text{
+      margin-bottom: 2rem;
+    }
+    &__btns{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+</style>

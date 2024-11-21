@@ -4,7 +4,7 @@
 
 <template>
   <section class="personalized">
-    <div class="container personalized__container">
+    <div class="container personalized__container section container-hidden">
       <h2 class="content-title personalized__title">Your Personalized Coffee</h2>
       <h3 class="content-subtitle personalized__subtitle">COFFEE BUILD YOUR BASE</h3>
       <ul class="list-reset personalized__list">

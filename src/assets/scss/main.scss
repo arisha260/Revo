@@ -5,6 +5,10 @@
 
 // подключения компонентов страницы
 
+body{
+  background: #f9fbff;
+}
+
 body.active{
   overflow: hidden;
 }
@@ -40,8 +44,17 @@ body.active{
   text-wrap: balance;
 }
 
+.section{
+  transition: transform 1s, opacity 1s;
+}
+
 .container{
   margin: 1.50rem 0 5.3rem 0;
+}
+
+.container-hidden{
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 .title-4{
@@ -59,6 +72,32 @@ body.active{
   font-weight: var(--fw-300);
   font-size: var(--fz-default);
   color: var(--dark-gray);
+}
+
+.cost{
+  font-family: var(--font-family);
+  font-weight: var(--fw-600);
+  font-size: var(--fz-small);
+  line-height: 120%;
+  color: var(--accent-color);
+}
+
+.button{
+  padding: 8px 15px;
+  font-family: var(--font-family);
+  font-weight: var(--fw-700);
+  font-size: var(--fz-default);
+  text-align: center;
+  color: #f9fbff;
+  border-radius: 19px;
+  background: var(--accent-color);
+}
+
+.button-2{
+  font-family: var(--font-family);
+  font-weight: var(--fw-700);
+  font-size: var(--fz-default);
+  color: var(--primary-color);
 }
 
 .animated{
