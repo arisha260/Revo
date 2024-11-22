@@ -6,7 +6,7 @@
 // подключения компонентов страницы
 
 body{
-  background: #f9fbff;
+  background: #F9FBFF;
 }
 
 body.active{
@@ -46,10 +46,6 @@ body.active{
 
 .section{
   transition: transform 1s, opacity 1s;
-}
-
-.container{
-  margin: 1.50rem 0 5.3rem 0;
 }
 
 .container-hidden{

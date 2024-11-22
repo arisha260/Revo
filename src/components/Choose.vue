@@ -36,8 +36,9 @@
   </section>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
   .choose {
+    padding: 2.6rem 0 1.6rem;
     &__container {
       isolation: isolate;
     }

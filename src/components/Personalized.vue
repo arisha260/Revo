@@ -19,6 +19,7 @@
 
 <style scoped lang="scss">
   .personalized{
+    padding: 2.6rem 0 1.6rem;
     &__list{
       display: flex;
       flex-direction: column;
