@@ -31,13 +31,16 @@
 <style scoped lang="scss">
   .combo{
     &__item{
-      max-width: 320px;
+      max-width: 330px;
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
       background-color: var(--light-color);
       box-shadow: 0px 4px 6px -4px rgba(34, 60, 80, 0.2);
+      @media (min-width: 26.5625rem){
+        max-width: 360px;
+      }
     }
     &__box-img{
       width: 100%;

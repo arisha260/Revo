@@ -5,8 +5,13 @@
 
 // подключения компонентов страницы
 
+//*{
+//  border: 1px solid red;
+//}
+
 body{
   background: #F9FBFF;
+  margin: 0;
 }
 
 body.active{
@@ -30,6 +35,9 @@ body.active{
   line-height: 120%;
   text-align: left;
   color: var(--primary-color);
+  @media (min-width: 37.5rem){
+    text-align: center;
+  }
 }
 
 .content-subtitle{
@@ -42,6 +50,9 @@ body.active{
   color: var(--primary-color);
   text-align: left;
   text-wrap: balance;
+  @media (min-width: 37.5rem){
+    text-align: center;
+  }
 }
 
 .section{

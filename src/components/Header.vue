@@ -51,19 +51,41 @@
 
 <style scoped lang="scss">
   .header{
+    @media (min-width: 75rem) {
+      background-image: linear-gradient(90deg, #f9fbff 50%, var(--primary-color) 50%);
+    }
+    &__container{
+      isolation: isolate;
+      @media (min-width: 75rem) {
+        display: flex;
+        flex-direction: row;
+      }
+    }
     &__container>:not(:last-child){
       margin-bottom: 5rem;
+      @media (min-width: 75rem) {
+        margin-bottom: 0;
+      }
     }
-    &__header__row--left{
+    &__row--left{
       display: flex;
       justify-content: space-between;
+      flex-direction: column;
       padding: 15px 15px 0;
+      flex-basis: 435px;
+      @media (min-width: 75rem) {
+        padding: 4.5rem 0 0 8.125rem;
+        position: relative;
+      }
     }
     &__column{
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-direction: row;
+      @media (min-width: 75rem) {
+        display: block;
+      }
     }
     &__logo{
       transition: filter 1s;
@@ -73,7 +95,9 @@
       filter: invert(1);
     }
     &__burger{
-
+      @media (min-width: 75rem) {
+        display: none;
+      }
     }
     &__title{
       display: flex;
@@ -90,7 +114,18 @@
       &-item--background{
         transition: background .5s, color .5s;
       }
+      @media (min-width: 75rem) {
+        position: absolute;
+        bottom: 6.4rem;
+        left: 8rem;
+      }
     }
-
+    &__row--center{
+      z-index: -1;
+      flex-basis: 690px;
+    }
+    &__row--right{
+      flex-basis: 275px;
+    }
   }
 </style>

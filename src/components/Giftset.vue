@@ -33,34 +33,50 @@
 <style scoped lang="scss">
   .giftset{
     padding: 2.6rem 0 1.6rem;
-    background: linear-gradient(to right, var(--light-gray) 75%, transparent 75%); /* Градиент для 75% */
+    background: linear-gradient(to right, var(--light-gray) 65%, transparent 65%); /* Градиент для 75% */
     background-repeat: no-repeat;
     background-size: 100% 100%; /* Чтобы фон покрывал всю высоту секции */
+    @media (min-width: 37.5rem) {
+      padding: 5.4375rem 0 8rem;
+    }
     &__content{
       display: flex;
       align-items: center;
       justify-content: center;
       width: 90%;
+      height: 100%;
+      @media (min-width: 75rem){
+       max-width: 100%;
+        margin-left: 180px;
+      }
     }
   }
 
   .tabs{
     width: 100%;
-    border: 1px solid var(--light-gray);
-    background-color: var(--light-color);
-    box-shadow: 1px 0 10px 0 rgba(205, 205, 205, 0.5);
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (min-width: 64rem){
+      flex-direction: row;
+      align-items: flex-start;
+    }
     &__right{
       width: 100%;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      @media (min-width: 64rem){
+        max-width: 88px;
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+        order: 2;
+      }
     }
     &__left{
+      height: 100%;
       order: 1;
-
     }
   }
 </style>

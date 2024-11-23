@@ -44,11 +44,12 @@
   </article>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
   .choose-card{
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     background-color: var(--light-color);
     box-shadow: 0px 4px 6px -4px rgba(34, 60, 80, 0.2);
     &__img-box{
@@ -57,10 +58,19 @@
       place-items: center;
       width: 100%;
       user-select: none;
+      @media (min-width: 48rem){
+        max-width: 235px;
+      }
     }
     &__content{
       padding: 2.625rem;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      @media (min-width: 48rem){
+        text-align: left;
+      }
     }
     &__cost{
       margin-bottom: 0.5rem;
@@ -72,10 +82,14 @@
       margin-bottom: 2rem;
     }
     &__btns{
+      margin-top: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 1rem;
+      @media (min-width: 48rem){
+        flex-direction: row;
+      }
     }
   }
 </style>

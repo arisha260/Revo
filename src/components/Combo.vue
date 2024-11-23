@@ -12,7 +12,7 @@
       <h3 class="content-subtitle combo__subtitle">COMBO PHIN PHÊ</h3>
       <Swiper class="combo__swiper swiper"
               :modules="[Navigation, Pagination]"
-              :slides-per-view="1"
+              :slides-per-view="'auto'"
               :loop="true"
               :space-between="30"
               :navigation="{
@@ -31,6 +31,12 @@
         <swiper-slide class="swiper__slide">
           <Content src="/combo4.svg" cost="249.000" costPrevious="236.000" title="Combo Revo Honey" text="Revo Natural là dòng cà phê đặc biệt của Revo Coffee dành riêng ..."/>
         </swiper-slide>
+        <swiper-slide class="swiper__slide">
+          <Content src="/combo2.svg" cost="156.000" costPrevious="165.000" title="Combo Revo Everyday" text="Revo Everyday được phối trộn giữa vị đắng của hạt Robusta và hương thơm..."/>
+        </swiper-slide>
+        <swiper-slide class="swiper__slide">
+          <Content src="/combo3.svg" cost="275.000" costPrevious="260.000" title="Combo Revo Honey" text="Honey – trong tên gọi Revo Honey đến từ phương pháp chế biến hạt Arabica..."/>
+        </swiper-slide>
         <button class="btn-reset swiper__btn swiper__btn--next"><Arrow /></button>
       </Swiper>
     </div>
@@ -40,6 +46,12 @@
 <style scoped lang="scss">
 .combo{
   padding: 2.6rem 0 1.6rem;
+  @media (min-width: 37.5rem) {
+    padding: 5.4375rem 0 8rem;
+  }
+  @media (min-width: 48rem){
+    background: linear-gradient(to left, var(--primary-color) 35%, transparent 35%); /* Градиент для 75% */
+  }
 }
 
 
@@ -48,8 +60,21 @@
   width: 100%;
   position: relative;
   isolation: isolate;
+  @media (min-width: 37.5rem){
+    &::after {
+      content: "";
+      position: absolute;
+      right: -50%;
+      top: 0;
+      left: 90%;
+      bottom: 0;
+      background: var(--primary-color);
+      opacity: .5;
+      z-index: 9;
+    }
+  }
   &__slide{
-    width: 100%;
+    width: auto;
     height: 100%;
     display: flex;
     flex-direction: column;

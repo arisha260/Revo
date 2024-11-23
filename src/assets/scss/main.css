@@ -199,6 +199,7 @@ a {
 
 body {
   background: #F9FBFF;
+  margin: 0;
 }
 
 body.active {
@@ -223,6 +224,11 @@ body.active {
   text-align: left;
   color: var(--primary-color);
 }
+@media (min-width: 37.5rem) {
+  .content-title {
+    text-align: center;
+  }
+}
 
 .content-subtitle {
   margin: 0;
@@ -234,6 +240,11 @@ body.active {
   color: var(--primary-color);
   text-align: left;
   text-wrap: balance;
+}
+@media (min-width: 37.5rem) {
+  .content-subtitle {
+    text-align: center;
+  }
 }
 
 .section {

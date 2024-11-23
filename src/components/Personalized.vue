@@ -20,11 +20,19 @@
 <style scoped lang="scss">
   .personalized{
     padding: 2.6rem 0 1.6rem;
+    @media (min-width: 37.5rem) {
+      padding: 5.4375rem 0 8rem;
+    }
     &__list{
       display: flex;
       flex-direction: column;
       width: 100%;
       gap: 4.125rem;
+      @media (min-width: 37.5rem){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
     }
   }
 </style>

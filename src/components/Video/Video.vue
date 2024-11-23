@@ -65,6 +65,10 @@
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
+    @media (min-width: 75rem) {
+      max-width: 690px;
+      padding: 0;
+    }
     &__container{
       width: 100%;
       height: 768px;
