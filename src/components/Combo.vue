@@ -44,13 +44,13 @@
 </template>
 
 <style scoped lang="scss">
-.combo{
+.combos
   padding: 2.6rem 0 1.6rem;
   @media (min-width: 37.5rem) {
     padding: 5.4375rem 0 8rem;
   }
   @media (min-width: 48rem){
-    background: linear-gradient(to left, var(--primary-color) 35%, transparent 35%); /* Градиент для 75% */
+    background: linear-gradient(to left, var(--primary-color) 30%, transparent 30%); /* Градиент для 75% */
   }
 }
 
@@ -58,20 +58,25 @@
 .swiper{
   margin: 0 auto;
   width: 100%;
+  max-width: 100%;
   position: relative;
   isolation: isolate;
   @media (min-width: 37.5rem){
+    padding: 1.8rem;
     &::after {
       content: "";
       position: absolute;
       right: -50%;
       top: 0;
-      left: 90%;
+      left: 84%;
       bottom: 0;
       background: var(--primary-color);
       opacity: .5;
       z-index: 9;
     }
+  }
+  @media (min-width: 75rem) {
+    margin-left: 98px;
   }
   &__slide{
     width: auto;
@@ -86,7 +91,7 @@
   &__btn{
     position: absolute;
     top: 50%;
-    right: 6%;
+    right: 10%;
     width: 48px;
     height: 48px;
     display: flex;
@@ -96,6 +101,7 @@
     border-radius: 100%;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transform: translateY(-50%);
     z-index: 10;
   }
 }

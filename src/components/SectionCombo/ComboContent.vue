@@ -38,8 +38,14 @@
       flex-direction: column;
       background-color: var(--light-color);
       box-shadow: 0px 4px 6px -4px rgba(34, 60, 80, 0.2);
+      transition: box-shadow .3s;
       @media (min-width: 26.5625rem){
         max-width: 360px;
+      }
+      @media(hover: hover){
+        &:hover{
+          box-shadow: 0px 0px 32px 0px rgba(34, 60, 80, 0.2);
+        }
       }
     }
     &__box-img{
@@ -79,11 +85,17 @@
       margin-bottom: 2rem;
     }
     &__btns{
+      width: 100%;
       margin-top: auto;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 1rem;
+      @media (min-width: 37.5rem){
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
     }
   }
 </style>

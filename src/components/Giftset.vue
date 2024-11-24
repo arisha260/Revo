@@ -33,7 +33,7 @@
 <style scoped lang="scss">
   .giftset{
     padding: 2.6rem 0 1.6rem;
-    background: linear-gradient(to right, var(--light-gray) 65%, transparent 65%); /* Градиент для 75% */
+    background: linear-gradient(to right, var(--light-gray) 70%, transparent 70%); /* Градиент для 75% */
     background-repeat: no-repeat;
     background-size: 100% 100%; /* Чтобы фон покрывал всю высоту секции */
     @media (min-width: 37.5rem) {

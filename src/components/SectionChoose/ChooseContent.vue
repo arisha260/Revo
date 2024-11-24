@@ -52,6 +52,12 @@
     height: 100%;
     background-color: var(--light-color);
     box-shadow: 0px 4px 6px -4px rgba(34, 60, 80, 0.2);
+    transition: box-shadow .3s;
+    @media(hover: hover){
+      &:hover{
+        box-shadow: 0px 0px 32px 0px rgba(34, 60, 80, 0.2);
+      }
+    }
     &__img-box{
       background-color: var(--light-gray);
       display: grid;

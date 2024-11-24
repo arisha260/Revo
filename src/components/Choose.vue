@@ -58,9 +58,11 @@
   .swiper{
     margin: 0 auto;
     width: 100%;
+    max-width: 90%;
     position: relative;
     isolation: isolate;
     @media (min-width: 37.5rem){
+      padding: 1.8rem;
       &::after {
         content: "";
         position: absolute;
@@ -72,6 +74,9 @@
         opacity: .5;
         z-index: 9;
       }
+    }
+    @media (min-width: 75rem) {
+      margin-left: 70px;
     }
     &__slide{
       width: auto;

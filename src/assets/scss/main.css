@@ -232,7 +232,7 @@ body.active {
 
 .content-subtitle {
   margin: 0;
-  margin-bottom: 4.5rem;
+  margin-bottom: 3.3rem;
   font-family: var(--third-family);
   font-weight: var(--fw-900);
   font-size: var(--fz-big);
@@ -290,6 +290,17 @@ body.active {
   color: #f9fbff;
   border-radius: 19px;
   background: var(--accent-color);
+  transition: 0.3s;
+}
+@media (hover: hover) {
+  .button:hover {
+    background: var(--light-gray);
+    color: var(--primary-color);
+  }
+}
+.button:active {
+  background: #cacaca;
+  color: var(--primary-color);
 }
 
 .button-2 {
