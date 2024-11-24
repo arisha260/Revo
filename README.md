@@ -1,8 +1,6 @@
 # revo-vue
 
-This template should help get you started developing with Vue 3 in Vite.
-
-# [Ready-made website]((https://arisha260.github.io/Revo/).
+# [Ready-made website](https://arisha260.github.io/Revo/).
 
 ## The site is set up according to the layout
 
